@@ -6,7 +6,7 @@ const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 bot.onText(/\/start/, (msg) => {
   bot.sendMessage(msg.chat.id, 'Добро пожаловать в Flower Boutique!', {
     reply_markup: {
-      keyboard: [[{ text: 'Открыть магазин', web_app: { url: 'https://flower-boutique.vercel.app/' } }]],
+      keyboard: [[{ text: 'Открыть магазин', web_app: { url: 'https://flower-beige-kappa.vercel.app/' } }]],
       resize_keyboard: true
     }
   });
